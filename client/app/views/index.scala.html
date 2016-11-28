@@ -1,0 +1,14 @@
+@()
+
+@main("Client") {
+    <script type='text/javascript' src='@routes.Assets.at("javascripts/index.js")'></script>
+
+    <form method="POST" action="@routes.MessageController.addMessage()">
+        <input type="text" name="message"/>
+        <button>Send message</button>
+    </form>
+
+    <h2>Responses</h2>
+    <ul id="Responses"></ul>
+
+}

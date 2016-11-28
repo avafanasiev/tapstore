@@ -1,0 +1,5 @@
+syntax="proto3";
+package messages.impl;
+message AddRequest {
+  string message = 1;
+}

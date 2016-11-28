@@ -1,0 +1,7 @@
+syntax="proto3";
+package messages.impl;
+message AddResponse {
+  int32 id = 1;
+  string message = 2;
+  int64 timestamp = 3;
+}
